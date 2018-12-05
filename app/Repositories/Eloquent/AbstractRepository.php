@@ -1,6 +1,7 @@
 <?php
 namespace Repositories\Eloquent;
 use Illuminate\Database\Eloquent\Model;
+
 abstract class AbstractRepository
 {
     /**
