@@ -39,12 +39,14 @@ class ContactRepository implements ContactRepositoryInterface
     {
         $contact = $this->getById($id);
         $contact->update($attributes);
+
         return $contact;
     }
 
     public function delete($id)
     {
         $this->getById($id)->delete();
+        
         return true;
     }
 
